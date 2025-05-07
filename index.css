@@ -1,0 +1,67 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    padding: 20px;
+}
+
+#header {
+    width: 100%;
+    background-color: #047857;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+#history {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#measurements {
+    width: 100%;
+}
+
+.accordion {
+    background-color: #F0F9FF;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 0px;
+    width: 100%;
+    min-width: unset;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #059669;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    width: calc(100% - 36px); /* Account for the panel padding */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
