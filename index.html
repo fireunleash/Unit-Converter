@@ -9,29 +9,44 @@
             <p>Convert between metric and imperial units</p>
             <div id="history">
                 <h2>History</h2>
-                <ul id="history-list"></ul>
-                <p>Click on the measurements below to convert your measurements</p>
+                <button id="clear-btn">Clear History</button>
+                <ul id="history-list-el"></ul>
             </div>
         </div>
         <div id="measurements">
             <button class="accordion">Length (Meter/Feet)</button>
             <div class="panel">
-              <p id="length-el">Lorem ipsum...</p>
+              <input type="number" id="meter-input" placeholder="Meter">
+              <button id="length-btn" class="convert-btn">Convert</button> 
+              <input type="number" id="feet-input" placeholder="Feet">          
             </div>
             
             <button class="accordion">Volume (Liters/Gallons)</button>
             <div class="panel">
-              <p id="volume-el">Lorem ipsum...</p>
+              <input type="number" id="liter-input" placeholder="Liter">
+              <button id="volume-btn" class="convert-btn">Convert</button> 
+              <input type="number" id="gallon-input" placeholder="Gallon">
             </div>
             
             <button class="accordion">Mass (Kilograms/Pounds)</button>
             <div class="panel">
-              <p id="mass-el">Lorem ipsum...</p>
+              <input type="number" id="kilogram-input" placeholder="Kilogram">
+              <button id="mass-btn" class="convert-btn">Convert</button> 
+              <input type="number" id="pound-input" placeholder="Pound">
             </div> 
             
             <button class="accordion">Speed (Kilometers per hour/Miles per hour)</button>
             <div class="panel">
-              <p id="speed-el">Lorem ipsum...</p>
+              <input type="number" id="kmph-input" placeholder="KM/Hour">
+              <button id="speed-btn" class="convert-btn">Convert</button> 
+              <input type="number" id="mph-input" placeholder="Miles/Hour">
+            </div> 
+
+            <button class="accordion">Temperature (Celcius/ Fahrenheit)</button>
+            <div class="panel">
+              <input type="number" id="celcius-input" placeholder="Celcius">
+              <button id="temperature-btn" class="convert-btn">Convert</button> 
+              <input type="number" id="fahrenheit-input" placeholder="Fahrenheit">
             </div> 
 
         </div>
